@@ -1,3 +1,3 @@
 # Dotfiles
 
-This repo holds my configuration files for my work environment.
+This repo holds the configuration files for my work environment.
