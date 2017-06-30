@@ -1,0 +1,14 @@
+pane	lpa	1	:Comp_session	0	:	1	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/Comp/COMP/WIP	1	bash	:
+pane	lpa	1	:Comp_session	0	:	2	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/Comp/COMP/WIP/Ll_test	0	bash	:
+pane	lpa	1	:Comp_session	0	:	3	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/Comp/COMP/WIP	0	htop	:htop
+pane	lpa	2	:LPA_session	1	:*	1	:/home/joseflora/Desktop	0	bash	:
+pane	lpa	2	:LPA_session	1	:*	2	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/Comp/COMP/WIP	1	bash	:
+pane	lpa	3	:CG_session	0	:	1	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/CG/git/computacao_grafica	1	bash	:
+pane	lpa	3	:CG_session	0	:	2	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/Comp/COMP/WIP	0	htop	:htop
+pane	lpa	3	:CG_session	0	:	3	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/CG/git/computacao_grafica	0	bash	:
+pane	lpa	4	:android_work	0	:-	1	:/home/joseflora/Desktop/working/android/android_vulnerabilities/CVE_2016_2464	1	bash	:
+window	lpa	1	0	:	2fd5,150x44,0,0[150x21,0,0,2,150x22,0,22{95x22,0,22,3,54x22,96,22,4}]
+window	lpa	2	1	:*	aed5,150x44,0,0{65x44,0,0,5,84x44,66,0,6}
+window	lpa	3	0	:	deff,80x23,0,0[80x20,0,0{70x20,0,0,8,9x20,71,0,9},80x2,0,21,10]
+window	lpa	4	0	:-	5e10,150x44,0,0,11
+state	lpa	

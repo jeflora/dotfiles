@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/joseflora/Desktop/CodingFun/Coding/LangLearning/prismjs'
+let g:netrw_dirhist_2='/home/joseflora/.vim/bundle/vim-airline/autoload/airline'
+let g:netrw_dirhist_3='/home/joseflora/.vim'

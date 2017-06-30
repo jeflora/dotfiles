@@ -1,0 +1,6 @@
+pane	0	1	:bash	1	:*	1	:/home/joseflora	1	bash	:
+pane	lpa	1	:vim	1	:*	1	:/home/joseflora/Desktop/working/TOPDEI/2AndAHalfMen_TOPDEI/Exercises/GraphTraining	0	vim	:vim R.c
+pane	lpa	1	:vim	1	:*	2	:/home/joseflora/Desktop/working/TOPDEI/2AndAHalfMen_TOPDEI/Exercises/GraphTraining	1	bash	:/usr/lib/firefox/firefox
+window	0	1	1	:*	bbbe,150x44,0,0,1
+window	lpa	1	1	:*	3da9,80x23,0,0[80x16,0,0,2,80x6,0,17,4]
+state	lpa	0

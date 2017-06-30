@@ -1,0 +1,15 @@
+pane	0	1	:bash	1	:*	1	:/home/joseflora	1	bash	:
+pane	lpa	1	:Comp_session	1	:*	1	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/Comp/COMP/WIP	0	vim	:vim code.c code.h code.ll
+pane	lpa	1	:Comp_session	1	:*	2	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/Comp/COMP/WIP/Ll_test	1	bash	:
+pane	lpa	1	:Comp_session	1	:*	3	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/Comp/COMP/WIP	0	htop	:htop
+pane	lpa	2	:LPA_session	0	:-	1	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/LPA/git/LPA2017	1	bash	:
+pane	lpa	2	:LPA_session	0	:-	2	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/Comp/COMP/WIP	0	htop	:htop
+pane	lpa	2	:LPA_session	0	:-	3	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/LPA/git/LPA2017	0	bash	:
+pane	lpa	3	:CG_session	0	:	1	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/CG/git/computacao_grafica	1	bash	:
+pane	lpa	3	:CG_session	0	:	2	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/Comp/COMP/WIP	0	htop	:htop
+pane	lpa	3	:CG_session	0	:	3	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/CG/git/computacao_grafica	0	bash	:
+window	0	1	1	:*	bbbe,150x44,0,0,1
+window	lpa	1	1	:*	f7f3,150x44,0,0[150x27,0,0,2,150x16,0,28{95x16,0,28,3,54x16,96,28,4}]
+window	lpa	2	0	:-	b7f1,150x44,0,0[150x31,0,0{105x31,0,0,5,44x31,106,0,6},150x12,0,32,7]
+window	lpa	3	0	:	5c45,150x44,0,0[150x31,0,0{105x31,0,0,8,44x31,106,0,9},150x12,0,32,10]
+state	lpa	0

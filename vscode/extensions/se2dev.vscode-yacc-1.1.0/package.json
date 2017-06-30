@@ -1,0 +1,53 @@
+{
+	"name": "vscode-yacc",
+	"displayName": "Bison & Yacc",
+	"description": "Syntax highlighting for Bison and Yacc in VSCode",
+	"version": "1.1.0",
+	"publisher": "se2dev",
+	"author": {
+		"name": "SE2Dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SE2Dev/vscode-yacc.git"
+	},
+	"engines": {
+		"vscode": "^0.10.6"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "yacc",
+				"aliases": [
+					"Yacc",
+					"yacc"
+				],
+				"extensions": [
+					".y",
+					".yy",
+					".ypp",
+					".yxx",
+					".y++",
+					".bison",
+					".BISON"
+				],
+				"configuration": "./yacc.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "yacc",
+				"scopeName": "source.yacc",
+				"path": "./syntaxes/yacc.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "f2a2cf05-afd7-42af-b5d2-a1e4db932b5a",
+		"publisherId": "d6a72b97-3a2f-41e7-ab57-c44ff02ec7dd",
+		"publisherDisplayName": "SE2Dev"
+	}
+}
