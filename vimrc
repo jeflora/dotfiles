@@ -16,6 +16,7 @@ Plugin 'jreybert/vimagit'
 Plugin 'szw/vim-tags'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-obsession'
+Plugin 'tpope/vim-surrond'
 
 call vundle#end()            
 filetype plugin indent on   

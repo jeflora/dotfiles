@@ -1,8 +1,0 @@
-pane	0	1	:bash	1	:*	1	:/home/joseflora	1	bash	:
-pane	2	1	:bash	1	:*	1	:/home/joseflora	1	bash	:
-pane	lpa	1	:vim	1	:*	1	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/Comp/COMP/WIP	0	vim	:vim code.c code.h symtab.c symtab.h data_types.c data_types.h util.c util.h
-pane	lpa	1	:vim	1	:*	2	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/Comp/COMP/WIP	1	bash	:
-window	0	1	1	:*	ae5e,80x23,0,0,1
-window	2	1	1	:*	ae5f,80x23,0,0,2
-window	lpa	1	1	:*	3db1,80x23,0,0[80x16,0,0,3,80x6,0,17,4]
-state	lpa	

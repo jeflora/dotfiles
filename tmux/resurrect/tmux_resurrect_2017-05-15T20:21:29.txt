@@ -1,7 +1,0 @@
-pane	lpa	1	:bash	1	:*	1	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/LPA/git/LPA2017/Problem4	0	vim	:vim solution.c
-pane	lpa	1	:bash	1	:*	2	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/LPA/git/LPA2017/Problem4	1	bash	:/usr/lib/firefox/firefox
-/usr/lib/thunderbird/thunderbird
-/usr/lib/slack/slack
-pane	lpa	1	:bash	1	:*	3	:/home/joseflora/Desktop/working/3rdYear/2ndSemester/LPA/git/LPA2017/Problem4	0	bash	:
-window	lpa	1	1	:*	7049,150x44,0,0[150x27,0,0,0,150x16,0,28{54x16,0,28,1,95x16,55,28,2}]
-state	lpa	
