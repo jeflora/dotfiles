@@ -17,6 +17,7 @@ Plugin 'szw/vim-tags'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-surround'
+Plugin 'cohlin/vim-colorschemes'
 
 call vundle#end()            
 filetype plugin indent on   
@@ -26,7 +27,7 @@ filetype plugin indent on
 
 let g:airline#extensions#tabline#enabled = 1
 
-let g:airline_section_y = '%{strftime("%c")}'
+"let g:airline_section_y = '%{strftime("%c")}'
 "let g:airline_section_y = 'BN: %{bufnr("%")}'
 " }}
 
@@ -78,6 +79,7 @@ syntax on
 set autowrite
 set noswapfile
 set showcmd
+set colorcolumn=120 
 
 " Resize splits
 set splitbelow
@@ -97,7 +99,6 @@ set scrolloff=20
 " }}
 
 " Colorscheme {
-set background=dark
-colorscheme hybrid
-hi Normal ctermbg=none
+let g:airline_theme="edocx"
+colorscheme xcode-default
 " }

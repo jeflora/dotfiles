@@ -1,0 +1,17 @@
+pane	0	1	:bash	1	:*	1	:/home/joseflora/Desktop/working/android/android_vulnerabilities/stagefright	1	bash	:
+pane	working	1	:apache2	0	:	1	:/var/www/html	1	bash	:
+pane	working	1	:apache2	0	:	2	:/var/www/html	0	bash	:
+pane	working	1	:apache2	0	:	3	:/var/www/html	0	bash	:
+pane	working	2	:Android_Issue1221	0	:-	1	:/home/joseflora/Desktop/working/android/android_vulnerabilities/Issue_1221	0	vim	:vim strh.py
+pane	working	2	:Android_Issue1221	0	:-	2	:/home/joseflora/Desktop/working/android/android_vulnerabilities/Issue_1221	0	bash	:
+pane	working	2	:Android_Issue1221	0	:-	3	:/home/joseflora/Desktop/working/android/android_vulnerabilities/Issue_1221	1	bash	:
+pane	working	3	:AndroidBreakdown_cve-2015-1538	1	:*	1	:/home/joseflora/Downloads/GS20151029232437	1	vim	:vim mp4_stagefright_release.py
+pane	working	3	:AndroidBreakdown_cve-2015-1538	1	:*	2	:/home/joseflora/Downloads/GS20151029232437	0	bash	:
+pane	working	4	:android_stagefright	0	:	1	:/home/joseflora/Desktop/working/android/android_vulnerabilities/stagefright	1	vim	:vim mp4.py
+pane	working	4	:android_stagefright	0	:	2	:/home/joseflora/Desktop/working/android/android_vulnerabilities/stagefright	0	bash	:
+window	0	1	1	:*	bbbe,150x44,0,0,1
+window	working	1	0	:	af93,150x44,0,0[150x31,0,0{95x31,0,0,2,54x31,96,0,3},150x12,0,32,4]
+window	working	2	0	:-	2fb0,150x44,0,0[150x31,0,0{95x31,0,0,5,54x31,96,0,6},150x12,0,32,7]
+window	working	3	1	:*	f122,150x44,0,0{105x44,0,0,8,44x44,106,0,12}
+window	working	4	0	:	f032,150x44,0,0{74x44,0,0,10,75x44,75,0,11}
+state	working	0
