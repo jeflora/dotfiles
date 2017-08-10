@@ -18,6 +18,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-surround'
 Plugin 'cohlin/vim-colorschemes'
+Plugin 'wakatime/vim-wakatime'
+Plugin 'tpope/vim-endwise'
 
 call vundle#end()            
 filetype plugin indent on   
