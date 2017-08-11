@@ -65,9 +65,9 @@ let g:ycm_complete_in_comments = 1
 
 " ============= UtilSnips  ==================
 
-let g:UtilSnipsExpandTrigger = '<Tab>'
-let g:UtilSnipsJumpForwardTrigger = '<Tab>'
-let g:UtilSnipsJumpBackwardTrigger = '<S-Tab>'
+let g:UltiSnipsExpandTrigger = '<Tab>'
+let g:UltiSnipsJumpForwardTrigger = '<Tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
 
 " ============= Navigation ==================
 " Map jj to act like escape
