@@ -1,0 +1,235 @@
+# DOCS: http://i3wm.org/docs/userguide.html
+
+# ============= Set $mod as Alt Key ==============
+set $mod Mod4
+
+# ============ Set polybar name ==================
+set $barname main
+
+# ============= Font for window titles ===========
+font pango:System San Francisco Display 10
+
+# ===== Mouse+$mod to drag floating windows ======
+floating_modifier $mod
+
+# ============= kill focused window ==============
+bindsym $mod+Shift+q kill
+
+# ================ dmenu keymap ==================
+# bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# =================== change focus ===============
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+ccedilla focus right
+
+# ============= move focused window ==============
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+ccedilla move right
+
+# ============== split in horizontal =============
+bindsym $mod+h split h
+
+# =============== split in vertical ==============
+bindsym $mod+v split v
+
+# ============ enter fullscreen mode =============
+bindsym $mod+f fullscreen toggle
+
+# =========== change container layout ============
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# =========== toggle tiling/floating =============
+bindsym $mod+Shift+space floating toggle
+
+# = change focus between tiling/floating windows =
+bindsym $mod+space focus mode_toggle
+
+# =========== focus the parent container =========
+bindsym $mod+a focus parent
+
+# =========== focus the child container ==========
+#bindsym $mod+d focus child
+
+# ============ Cycling workspaces ================
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
+# ========== define workspace vars ===============
+set $workspace1  "1: "
+set $workspace2  "2: "
+set $workspace3  "3: "
+set $workspace4  "4"
+set $workspace5  "5"
+set $workspace6  "6"
+set $workspace7  "7"
+set $workspace8  "8"
+set $workspace9  "9"
+set $workspace10 "10: "
+
+# ============ switch to workspace ===============
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
+bindsym $mod+9 workspace $workspace9
+bindsym $mod+0 workspace $workspace10
+
+# ===== move focused container to workspace ======
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
+bindsym $mod+Shift+0 move container to workspace $workspace10
+
+# ==== Open applications in defined workspace ====
+assign [class="Firefox"] $workspace1
+assign [class="Gnome-terminal"] $workspace2
+assign [class="Liferea"] $workspace3
+for_window [class="Spotify"] move to workspace $workspace10
+
+# ======== reload the configuration file =========
+bindsym $mod+Shift+c reload
+ 
+# ============= restart i3 inplace ===============
+bindsym $mod+Shift+r restart
+
+# ============= exit i3 (logs out) ===============
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# ============= resize window ====================
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym ccedilla resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# ============== System mode =====================
+set $mode_system System (r)eboot, (s)hutdown
+mode "$mode_system" {
+    bindsym r exec reboot
+    bindsym s exec shutdown -h now
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Pause mode "$mode_system"
+
+# ================== Color vars ==================
+set $bg-color            #2f343f
+set $inactive-bg-color   #2f343f
+set $text-color          #f3f4f5
+set $inactive-text-color #676E7D
+set $urgent-bg-color     #E53935
+
+# ============== set window colors ===============
+#                               border                  background              text                 indicator
+client.focused                  $bg-color               $bg-color               $text-color          #00ff00
+client.unfocused                $inactive-bg-color      $inactive-bg-color      $inactive-text-color #00ff00
+client.focused_inactive         $inactive-bg-color      $inactive-bg-color      $inactive-text-color #00ff00
+client.urgent                   $urgent-bg-color        $urgent-bg-color        $text-color          #00ff00
+
+# ============= Hide windows borders =============
+hide_edge_borders both
+
+# *********** Replaced by polybar ****************
+# =============== Workspace bar ==================
+#bar {
+#        # status_command i3status
+#        status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#        tray_output primary
+#
+#        colors {
+#            background $bg-color
+#            separator #757575
+#            #                   border              background          text
+#            focused_workspace   $bg-color           $bg-color           $text-color
+#            inactive_workspace  $inactive-bg-color  $inactive-bg-color  $inactive-text-color
+#            urgent_workspace    $urgent-bg-color    $urgent-bg-color    $text-color
+#        }
+#}
+
+# ============ Lock screen key binding ===========
+bindsym $mod+Shift+x exec i3lock --color 475263
+
+# ============ Start firefox =====================
+bindsym $mod+Shift+f exec firefox
+ 
+# =========== Start a terminal ===================
+bindsym $mod+Return exec gnome-terminal
+
+# ============ Take screenshot ===================
+bindsym Print exec gnome-screenshot
+
+# ============== Audio Keys Control ==============
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5% #increase sound
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5% #decrease sound
+bindsym XF86AudioMute exec pactl set-sink-mute 1 toggle # mute sound
+
+# ========= Screen brightness controls ===========
+bindslm XF86MonBrightnessUp exec xbacklight -inc 20 # increase brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease brightness
+
+# ================ Touchpad controls =============
+bindsym XF86TouchpadToggle exec ~/.config/i3/scripts/toggletouchpad # toggle touchpad
+
+# ============ Media player controls =============
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioStop exec playerctl stop
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+# ============= Touchpad Scrolling ===============
+exec --no-startup-id synclient VertTwoFingerScroll=1 HorizTwoFingerScroll=1 VertScrollDelta=-80
+
+# ============= Calculator hotkey ================
+bindsym XF86Calculator exec gnome-calculator
+
+# ============ Environment Wallpaper =============
+exec_always feh --bg-scale ~/Pictures/mW16tN0.png
+
+# =============== Start polybar ==================
+exec polybar $barname &
+
+# ============== Launch Firefox ==================
+exec firefox
+
+# ============ Launch RSS reader =================
+exec liferea &
+
+# ============== Launch Terminal =================
+exec gnome-terminal
+
+# ============== Launch Dropbox ==================
+exec dropbox start -i
+
+# =============== Launch f.lux ===================
+exec fluxgui
+
+# ========== Display terminal workspace ==========
+exec --no-startup-id i3-msg workspace $workspace2
