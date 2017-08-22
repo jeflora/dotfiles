@@ -1,11 +1,9 @@
 " ================= Vundle ==================
-
 set nocompatible              
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 
 " ================= PLUGINS =================
 
@@ -26,20 +24,20 @@ Plugin 'wakatime/vim-wakatime'
 Plugin 'tpope/vim-endwise'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'iamcco/markdown-preview.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " ============ END OF PLUGINS ===============
-
 call vundle#end()            
 filetype plugin indent on   
 
 " ============= vim-airline =================
-
 let g:airline#extensions#tabline#enabled = 1
 "let g:airline_section_y = '%{strftime("%c")}'
 "let g:airline_section_y = 'BN: %{bufnr("%")}'
 
 " ============== gitgutter ==================
-
 let g:gitgutter_sign_added    = '++'
 let g:gitgutter_sign_modified = '>>'
 let g:gitgutter_sign_removed  = '--'
@@ -47,16 +45,13 @@ let g:gitgutter_sign_removed_first_line = '^^'
 let g:gitgutter_sign_modified_removed = '-+'
 
 " ================ ctags ====================
-
 nnoremap <C-a> <C-]> 
 nnoremap <C-x> <C-t>
 
 " ============== NERDTree ===================
-
 map <C-n> :NERDTreeToggle<CR>
 
 " =========== YouCompleteMe =================
-
 let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 
@@ -64,10 +59,19 @@ let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_complete_in_comments = 1
 
 " ============= UtilSnips  ==================
-
 let g:UltiSnipsExpandTrigger = '<Tab>'
 let g:UltiSnipsJumpForwardTrigger = '<Tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
+
+" =============== vim-markdown ==============
+let g:vim_markdown_new_list_item_indent = 4
+let g_vim_markdown_no_extensions_in_markdown = 1
+
+" ========== markdown-preview.vim ===========
+let g:mkdp_path_to_chrome = 'firefox'
+map <C-m> :MarkdownPreview<CR>
+map <C-c> :MarkdownPreviewStop<CR>
+autocmd BufWritePost *.markdown,*.md :MarkdownPreview
 
 " ============= Navigation ==================
 " Map jj to act like escape
@@ -118,7 +122,6 @@ set showmatch
 set scrolloff=20
 
 " ============ Colorscheme ==================
-
 let g:airline_theme="edocx"
 colorscheme xcode-default
 
