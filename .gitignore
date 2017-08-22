@@ -1,6 +1,7 @@
 tmux/resurrect/
 vim/bundle/vim-wakatime/
 vim/bundle/vim-tags
+config/ranger/
 config/autostart/
 config/cef_user_data/
 config/Code/
