@@ -183,6 +183,9 @@ bindsym $mod+Shift+f exec firefox
 # =========== Start a terminal ===================
 bindsym $mod+Return exec gnome-terminal
 
+# ============ Start liferea =====================
+bindsym $mod+Shift+a exec liferea
+
 # ============ Take screenshot ===================
 bindsym Print exec gnome-screenshot
 
