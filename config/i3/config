@@ -1,7 +1,8 @@
 # DOCS: http://i3wm.org/docs/userguide.html
 
-# ============= Set $mod as Alt Key ==============
-set $mod Mod4
+# =========== Set $mod as Super Key ==============
+# set $mod Mod1 # Alt key
+set $mod Mod4 # Super key
 
 # ============ Set polybar name ==================
 set $barname main
@@ -64,13 +65,13 @@ bindsym $mod+Shift+Tab workspace prev
 # ========== define workspace vars ===============
 set $workspace1  "1: "
 set $workspace2  "2: "
-set $workspace3  "3: "
+set $workspace3  "3: "
 set $workspace4  "4"
 set $workspace5  "5"
 set $workspace6  "6"
 set $workspace7  "7"
-set $workspace8  "8"
-set $workspace9  "9"
+set $workspace8  "8: "
+set $workspace9  "9: "
 set $workspace10 "10: "
 
 # ============ switch to workspace ===============
@@ -100,7 +101,8 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 # ==== Open applications in defined workspace ====
 assign [class="Firefox"] $workspace1
 assign [class="Gnome-terminal"] $workspace2
-assign [class="Liferea"] $workspace3
+assign [class="Liferea"] $workspace8
+assign [class="Slack"] $workspace9
 for_window [class="Spotify"] move to workspace $workspace10
 
 # ======== reload the configuration file =========
@@ -220,10 +222,10 @@ exec_always feh --bg-scale ~/Pictures/mW16tN0.png
 exec polybar $barname &
 
 # ============== Launch Firefox ==================
-exec firefox
+exec firefox &
 
-# ============ Launch RSS reader =================
-exec liferea &
+# =============== Launch Slack  ==================
+exec slack &
 
 # ============== Launch Terminal =================
 exec gnome-terminal
