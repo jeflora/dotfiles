@@ -1,8 +1,7 @@
 # DOCS: http://i3wm.org/docs/userguide.html
 
 # =========== Set $mod as Super Key ==============
-# set $mod Mod1 # Alt key
-set $mod Mod4 # Super key
+set $mod Mod4
 
 # ============ Set polybar name ==================
 set $barname main
@@ -16,9 +15,10 @@ floating_modifier $mod
 # ============= kill focused window ==============
 bindsym $mod+Shift+q kill
 
+# *********** Replaced by Cerebro ****************
 # ================ dmenu keymap ==================
 # bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # =================== change focus ===============
 bindsym $mod+j focus left
@@ -224,14 +224,17 @@ exec polybar $barname &
 # ============== Launch Firefox ==================
 exec firefox &
 
-# =============== Launch Slack  ==================
-exec slack &
-
 # ============== Launch Terminal =================
 exec gnome-terminal
 
 # ============== Launch Dropbox ==================
 exec dropbox start -i
+
+# ============= Start nm-applet ==================
+exec nm-applet
+
+exec ~/cerebro/cerebro-0.3.1-x86_64.AppImage
+
 
 # =============== Launch f.lux ===================
 exec fluxgui
