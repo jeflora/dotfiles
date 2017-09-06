@@ -1,0 +1,11 @@
+{
+  "name": "cerebro-plugins",
+  "dependencies": {
+    "cerebro-google": "1.0.0",
+    "cerebro-open-web": "1.0.0",
+    "cerebro-math": "1.0.0",
+    "cerebro-converter": "1.0.3",
+    "cerebro-basic-apps": "1.0.9",
+    "cerebro-files-nav": "1.0.3"
+  }
+}
