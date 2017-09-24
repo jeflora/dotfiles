@@ -5,6 +5,7 @@ config/ranger/
 config/autostart/
 config/cef_user_data/
 config/Code/
+config/Cerebro
 config/compiz-1/
 config/dconf/
 config/Electron/
