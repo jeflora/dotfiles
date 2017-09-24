@@ -58,10 +58,10 @@ let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_complete_in_comments = 1
 
-" ============= UtilSnips  ==================
-let g:UltiSnipsExpandTrigger = '<Tab>'
-let g:UltiSnipsJumpForwardTrigger = '<Tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
+" ============= UltiSnips  ==================
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<S-tab>'
 
 " =============== vim-markdown ==============
 let g:vim_markdown_new_list_item_indent = 4
@@ -91,7 +91,6 @@ nnoremap <C-H> <C-W><C-H>
 
 " ============== General ====================
 
-filetype indent on
 set autoindent
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set relativenumber
