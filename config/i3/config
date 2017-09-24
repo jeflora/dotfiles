@@ -101,6 +101,9 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 # ==== Open applications in defined workspace ====
 assign [class="Firefox"] $workspace1
 assign [class="Gnome-terminal"] $workspace2
+assign [class="Eclipse"] $workspace3
+assign [class="Code"] $workspace3
+assign [class="Gedit"] $workspace3
 assign [class="Liferea"] $workspace8
 assign [class="Slack"] $workspace9
 for_window [class="Spotify"] move to workspace $workspace10
