@@ -1,11 +1,15 @@
 {
   "name": "cerebro-plugins",
   "dependencies": {
-    "cerebro-google": "1.0.0",
     "cerebro-open-web": "1.0.0",
     "cerebro-math": "1.0.0",
     "cerebro-converter": "1.0.3",
     "cerebro-basic-apps": "1.0.9",
-    "cerebro-files-nav": "1.0.3"
+    "cerebro-files-nav": "1.0.3",
+    "cerebro-linux-system": "0.2.8",
+    "cerebro-duck-duck-go": "1.0.0",
+    "cerebro-shell": "0.1.5",
+    "cerebro-stackoverflow": "0.5.2",
+    "cerebro-gitignore": "1.0.1"
   }
 }

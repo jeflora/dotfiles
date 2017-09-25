@@ -15,13 +15,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'jreybert/vimagit'
-Plugin 'szw/vim-tags'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-surround'
 Plugin 'cohlin/vim-colorschemes'
 Plugin 'wakatime/vim-wakatime'
-Plugin 'tpope/vim-endwise'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'iamcco/markdown-preview.vim'
@@ -43,10 +40,6 @@ let g:gitgutter_sign_modified = '>>'
 let g:gitgutter_sign_removed  = '--'
 let g:gitgutter_sign_removed_first_line = '^^'
 let g:gitgutter_sign_modified_removed = '-+'
-
-" ================ ctags ====================
-nnoremap <C-a> <C-]> 
-nnoremap <C-x> <C-t>
 
 " ============== NERDTree ===================
 map <C-n> :NERDTreeToggle<CR>
